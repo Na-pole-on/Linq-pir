@@ -1,0 +1,2519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/BR.Logic">
+  <CompilationType>CSharp</CompilationType>
+  <Description i:nil="true" />
+  <Id>4d16287d-079c-40d5-9bc2-488a003cf0bf</Id>
+  <Logic z:Id="i2" i:type="ExecutedStep">
+    <Childs>
+      <AbstractStep z:Id="i3" i:type="ExecutedStep">
+        <Childs />
+        <Id>3896ccfb-1463-4f07-9f9b-052728113937</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i4">
+            <PropertyName>Value</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>new Dictionary&lt;string, System.Object&gt;()</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i5">
+            <PropertyName>To</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>dict_config</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Словарь для данных конфигурационного файла, а также любых других значений</Text>
+        <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i6" i:type="ExecutedStep">
+        <Childs />
+        <Id>7ccc2323-9835-4d49-a481-fe201d0a4414</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i7">
+            <PropertyName>Value</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>new Dictionary&lt;string, string&gt;()</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i8">
+            <PropertyName>To</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>dict_paths</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Словарь для хранения путей к проектным\созданным папкам</Text>
+        <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i9" i:type="ExecutedStep">
+        <Childs />
+        <Id>e8f2be3e-b9ff-4fef-a453-0ebff413767d</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i10">
+            <PropertyName>FilePath</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>@"Project\InitAllSettings.pix"</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i11">
+            <PropertyName>Parameters</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_screenShotBase64 i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d7p1:ArrayOfArgumentItem">
+              <d7p1:ArgumentItem z:Id="i12">
+                <d7p1:ArgumentName>str_configFile</d7p1:ArgumentName>
+                <d7p1:Expression>@"Data\Config.xlsx"</d7p1:Expression>
+                <d7p1:Type>System.String</d7p1:Type>
+              </d7p1:ArgumentItem>
+              <d7p1:ArgumentItem z:Id="i13">
+                <d7p1:ArgumentName>dict_config</d7p1:ArgumentName>
+                <d7p1:Expression>dict_config</d7p1:Expression>
+                <d7p1:Type>Dictionary&lt;System.String, System.Object&gt;</d7p1:Type>
+              </d7p1:ArgumentItem>
+              <d7p1:ArgumentItem z:Id="i14">
+                <d7p1:ArgumentName>dict_paths</d7p1:ArgumentName>
+                <d7p1:Expression>dict_paths</d7p1:Expression>
+                <d7p1:Type>Dictionary&lt;System.String, System.String&gt;</d7p1:Type>
+              </d7p1:ArgumentItem>
+            </_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Инициализация проекта</Text>
+        <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i15" i:type="ExecutedStep">
+        <Childs />
+        <Id>4b7bd986-ce32-4d35-9c8e-d0d1289e10f0</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i16">
+            <PropertyName>FilePath</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>@"Project\KillProcesses.pix"</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i17">
+            <PropertyName>Parameters</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_screenShotBase64 i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d7p1:ArrayOfArgumentItem">
+              <d7p1:ArgumentItem z:Id="i18">
+                <d7p1:ArgumentName>list_processesToKill</d7p1:ArgumentName>
+                <d7p1:Expression>new List&lt;String&gt;{ "excel" }</d7p1:Expression>
+                <d7p1:Type>List&lt;System.String&gt;</d7p1:Type>
+              </d7p1:ArgumentItem>
+              <d7p1:ArgumentItem z:Id="i19">
+                <d7p1:ArgumentName>list_foldersToDelete</d7p1:ArgumentName>
+                <d7p1:Expression>new List&lt;String&gt;{ "TEMP" }</d7p1:Expression>
+                <d7p1:Type>List&lt;System.String&gt;</d7p1:Type>
+              </d7p1:ArgumentItem>
+            </_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Закрытие фоновых процессов</Text>
+        <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i20" i:type="ExecutedStep">
+        <Childs />
+        <Id>3279d622-61bf-4ab6-b493-696d82721d0b</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i21">
+            <PropertyName>PathFrom</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>Path.Combine(dict_paths["InFolder"], str_excelFile)</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i22">
+            <PropertyName>PathTo</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>Path.Combine(dict_paths["TEMPFolder"], str_excelFile)</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Копируем таблицу из входных данных во временную папку</Text>
+        <_activityFullName>Activities.Files.CopyFileCatalog</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i23" i:type="ExecutedStep">
+        <Childs />
+        <Id>cf47e15a-d1cd-4e27-8fa4-bb9bb8bd0015</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i24">
+            <PropertyName>Range</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>""</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i25">
+            <PropertyName>Result</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>dt_sourceTable</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i26">
+            <PropertyName>SheetName</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>dict_config["SourceTable"].ToString()</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i27">
+            <PropertyName>FileName</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>Path.Combine(dict_paths["TEMPFolder"], str_excelFile)</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Чтение входных данных</Text>
+        <_activityFullName>Activities.Office.Excel.ReadRange</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i28" i:type="ExecutedStep">
+        <Childs>
+          <AbstractStep z:Id="i29" i:type="ExecutedStep">
+            <Childs />
+            <Id>c319d24c-0618-4eb7-bd15-f0aee985bf36</Id>
+            <Parent z:Ref="i28" />
+            <PropertyValues>
+              <PropertyValue z:Id="i30">
+                <PropertyName>Range</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>""</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i31">
+                <PropertyName>Result</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>dt_updateSourceTable</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i32">
+                <PropertyName>SheetName</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>dict_config["UpdateSourceTable"].ToString()</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i33">
+                <PropertyName>FileName</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>Path.Combine(dict_paths["TEMPFolder"], str_excelFile)</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+            </PropertyValues>
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text>Получение таблицы из листа обновленная таблица</Text>
+            <_activityFullName>Activities.Office.Excel.ReadRange</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i34" i:type="ExecutedStep">
+            <Childs />
+            <Id>25604a1d-5cbf-441a-b24e-9f9a8583f2e7</Id>
+            <Parent z:Ref="i28" />
+            <PropertyValues>
+              <PropertyValue z:Id="i35">
+                <PropertyName>Value</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>new List&lt;string&gt;()</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i36">
+                <PropertyName>To</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>list_positionForPaiting</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+            </PropertyValues>
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text>Создаем список для позиций для покраски</Text>
+            <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i37" i:type="ExecutedStep">
+            <Childs />
+            <Id>c77923da-9acd-444b-8ed2-dd6834c7c7db</Id>
+            <Parent z:Ref="i28" />
+            <PropertyValues>
+              <PropertyValue z:Id="i38">
+                <PropertyName>CSCode</PropertyName>
+                <_dataType>Value</_dataType>
+                <_expression i:nil="true" />
+                <_screenShotBase64 i:nil="true" />
+                <_value xmlns:d9p1="http://www.w3.org/2001/XMLSchema" i:type="d9p1:string">dt_sourceTable.Columns.Add("Сумма баллов (платно)", typeof(string));
+dt_sourceTable.Columns.Add("Сумма баллов (бюджет)", typeof(string));
+dt_sourceTable.Columns.Add("Среднее баллов (платно)", typeof(string));
+dt_sourceTable.Columns.Add("Среднее баллов (бюджет)", typeof(string));
+
+decimal sumBudget = 0;
+decimal sumPaid = 0;
+
+var list_subjectBudget = dt_sourceTable.Columns.Cast&lt;DataColumn&gt;().Select(col =&gt; col.ColumnName)
+    .Where(name =&gt; name.Contains("(платно)")).ToList();
+    
+var list_subjectPaid = dt_sourceTable.Columns.Cast&lt;DataColumn&gt;().Select(col =&gt; col.ColumnName)
+    .Where(name =&gt; name.Contains("(бюджет)")).ToList();
+    
+dt_sourceTable.AsEnumerable().Select(row =&gt; {
+    
+    if($"{row[1]}" != ""){
+        row["Сумма баллов (платно)"] = Decimal.Parse($"{row[list_subjectBudget[0]]}") + 
+            Decimal.Parse($"{row[list_subjectBudget[1]]}") + 
+            Decimal.Parse($"{row[list_subjectBudget[2]]}");
+            
+        row["Сумма баллов (бюджет)"] = Decimal.Parse($"{row[list_subjectPaid[0]]}") + 
+            Decimal.Parse($"{row[list_subjectPaid[1]]}") + 
+            Decimal.Parse($"{row[list_subjectPaid[2]]}");
+            
+        row["Среднее баллов (платно)"] = Math.Round(Decimal.Parse($"{row["Сумма баллов (платно)"]}") / 3, 2);
+        row["Среднее баллов (бюджет)"] = Math.Round(Decimal.Parse($"{row["Сумма баллов (бюджет)"]}") / 3, 2);
+    }
+    
+    return "";
+}).ToList();</_value>
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+            </PropertyValues>
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text></Text>
+            <_activityFullName>BR.Core.Base.ExecuteCSCode</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i39" i:type="ExecutedStep">
+            <Childs />
+            <Id>fe7c61c6-58ee-4b67-9800-f2763a7001c5</Id>
+            <Parent z:Ref="i28" />
+            <PropertyValues>
+              <PropertyValue z:Id="i40">
+                <PropertyName>CSCode</PropertyName>
+                <_dataType>Value</_dataType>
+                <_expression i:nil="true" />
+                <_screenShotBase64 i:nil="true" />
+                <_value xmlns:d9p1="http://www.w3.org/2001/XMLSchema" i:type="d9p1:string">string university = "";
+
+dict_university = dt_sourceTable.AsEnumerable().Select(row =&gt; {
+    if($"{row["ВУЗ"]}" != "")
+        university = $"{row["ВУЗ"]}";
+        
+    row["ВУЗ"] = university;
+    
+    return row;
+})
+    .Where(row =&gt; row.ItemArray.All(item =&gt; $"{item}" != ""))
+    .GroupBy(row =&gt; $"{row["ВУЗ"]}")
+    .ToDictionary(group =&gt; group.Key, group =&gt; group.OrderByDescending(row =&gt; System.Text.RegularExpressions.Regex
+        .Match($"{row["Факультет"]}", @"(?&lt;=\d+.\d+.\d+\s).+").Value).ToList());
+        
+int dataStart = 2;
+
+list_positionForPaiting = dict_university.Select(group =&gt; {
+    int max = group.Value.Max(row =&gt; int.Parse($"{row["Количество бюджетных мест"]}"));
+    int min = group.Value.Min(row =&gt; int.Parse($"{row["Количество бюджетных мест"]}"));
+    
+    var position = group.Value
+        .Select(row =&gt; {
+            string maxPosition = "";
+            string minPosition = "";
+            
+            if($"{row["Количество бюджетных мест"]}" == $"{max}")
+                maxPosition = $"{group.Value.IndexOf(row) + dataStart + 1}";
+                
+            if($"{row["Количество бюджетных мест"]}" == $"{min}")
+                minPosition = $"{group.Value.IndexOf(row) + dataStart + 1}";
+            
+            return ((maxPosition == "") ? "null" : maxPosition) + ":" + ((minPosition == "") ? "null" : minPosition);
+        }).ToList();
+    
+    dataStart += group.Value.Count() + 1;
+    
+    return string.Join(", ", position.ToArray());
+}).ToList();
+
+
+list_positionForPaiting = list_positionForPaiting.Select(str_pos =&gt; {
+    List&lt;string&gt; positions = str_pos.Split(", ").ToList();
+    
+    positions = positions.Where(pos =&gt; !System.Text.RegularExpressions.Regex.IsMatch(pos, @"null:null")).ToList();
+    
+    return string.Join(", ", positions.ToArray());
+}).ToList();
+
+
+dict_university.Select(group =&gt; {
+
+    var row = dt_updateSourceTable.NewRow();
+        
+    row["ВУЗ"] = group.Key;
+        
+    dt_updateSourceTable.Rows.Add(row);
+
+    group.Value.Select(values =&gt; {
+        
+        var row = dt_updateSourceTable.NewRow();
+        
+        row["Факультет"] = values["Факультет"];
+        row["Сумма баллов (платно)"] = values["Сумма баллов (платно)"];
+        row["Сумма баллов (бюджет)"] = values["Сумма баллов (бюджет)"];
+        row["Среднее баллов (платно)"] = values["Среднее баллов (платно)"];
+        row["Среднее баллов (бюджет)"] = values["Среднее баллов (бюджет)"];
+        row["Баллы по математике (платно)"] = values["Баллы по математике (платно)"];
+        row["Баллы по математике (бюджет)"] = values["Баллы по математике (бюджет)"];
+        row["Баллы по информатике (платно)"] = values["Баллы по информатике (платно)"];
+        row["Баллы по информатике (бюджет)"] = values["Баллы по информатике (бюджет)"];
+        row["Баллы по русскому (платно)"] = values["Баллы по русскому (платно)"];
+        row["Баллы по русскому (бюджет)"] = values["Баллы по русскому (бюджет)"];
+        row["Количество бюджетных мест"] = values["Количество бюджетных мест"];
+        
+        dt_updateSourceTable.Rows.Add(row);
+        
+        return "";
+    }).ToList();
+    
+    return "";
+}).ToList();</_value>
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+            </PropertyValues>
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text></Text>
+            <_activityFullName>BR.Core.Base.ExecuteCSCode</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i41" i:type="ExecutedStep">
+            <Childs />
+            <Id>3257a03f-4602-4c11-890f-d56a6b6ac29d</Id>
+            <Parent z:Ref="i28" />
+            <PropertyValues>
+              <PropertyValue z:Id="i42">
+                <PropertyName>DataTable</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>dt_updateSourceTable</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i43">
+                <PropertyName>SheetName</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>dict_config["UpdateSourceTable"].ToString()</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i44">
+                <PropertyName>FileName</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>Path.Combine(dict_paths["TEMPFolder"], str_excelFile)</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+            </PropertyValues>
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text>Записываем обновленную таблицу в лист обневленная таблица</Text>
+            <_activityFullName>Activities.Office.Excel.WriteRange</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i45" i:type="ExecutedStep">
+            <Childs />
+            <Id>1c3315d5-7aa8-402f-900f-39ab8d832d4a</Id>
+            <Parent z:Ref="i28" />
+            <PropertyValues>
+              <PropertyValue z:Id="i46">
+                <PropertyName>Value</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>(char)((int)'A' + dt_sourceTable.Columns.Count - 1)</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i47">
+                <PropertyName>To</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>char_columnForPainting</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+            </PropertyValues>
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text>Получение позиции колонки для закрашивания</Text>
+            <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i48" i:type="ExecutedStep">
+            <Childs />
+            <Id>97affc93-db5f-4bb5-a876-8d4ada880ab2</Id>
+            <Parent z:Ref="i28" />
+            <PropertyValues>
+              <PropertyValue z:Id="i49">
+                <PropertyName>PathToFile</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>Path.Combine(dict_paths["TEMPFolder"], str_excelFile)</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i50">
+                <PropertyName>Visible</PropertyName>
+                <_dataType>Value</_dataType>
+                <_expression i:nil="true" />
+                <_screenShotBase64 i:nil="true" />
+                <_value xmlns:d9p1="http://www.w3.org/2001/XMLSchema" i:type="d9p1:boolean">true</_value>
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i51">
+                <PropertyName>ExcelVariable</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>excel</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+            </PropertyValues>
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text></Text>
+            <_activityFullName>Activities.Office.InteropExcel.ConnectExcel</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i52" i:type="ExecutedStep">
+            <Childs>
+              <AbstractStep z:Id="i53" i:type="ExecutedStep">
+                <Childs />
+                <Id>10af7ecc-3a1b-45ff-b6f8-487b86692f7e</Id>
+                <Parent z:Ref="i52" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i54">
+                    <PropertyName>Value</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>positions.Split(", ").ToList()</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i55">
+                    <PropertyName>To</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>list_position</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text>Получение списка позоций для закрашивания</Text>
+                <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+              </AbstractStep>
+              <AbstractStep z:Id="i56" i:type="ExecutedStep">
+                <Childs>
+                  <AbstractStep z:Id="i57" i:type="ExecutedStep">
+                    <Childs />
+                    <Id>8810f8ad-b2f5-47a7-ac27-3192f9edebc5</Id>
+                    <Parent z:Ref="i56" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i58">
+                        <PropertyName>ForegroundColor</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>System.Drawing.Color.Red</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i59">
+                        <PropertyName>CellProperties</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>MinStyle</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text>Создаем стиль для минимального значения</Text>
+                    <_activityFullName>Activities.CellProperty.CreateCellProperty</_activityFullName>
+                  </AbstractStep>
+                  <AbstractStep z:Id="i60" i:type="ExecutedStep">
+                    <Childs />
+                    <Id>3ddbd7f3-a793-472b-9cef-6304e02d88e8</Id>
+                    <Parent z:Ref="i56" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i61">
+                        <PropertyName>ForegroundColor</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>System.Drawing.Color.Green</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i62">
+                        <PropertyName>CellProperties</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>MaxStyle</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text>Создаем стиль для максимального значения</Text>
+                    <_activityFullName>Activities.CellProperty.CreateCellProperty</_activityFullName>
+                  </AbstractStep>
+                  <AbstractStep z:Id="i63" i:type="ExecutedStep">
+                    <Childs>
+                      <AbstractStep z:Id="i64" i:type="ExecutedStep">
+                        <Childs>
+                          <AbstractStep z:Id="i65" i:type="ExecutedStep">
+                            <Childs />
+                            <Id>37b3990f-0943-4f5c-a29b-578e4521d30d</Id>
+                            <Parent z:Ref="i64" />
+                            <PropertyValues>
+                              <PropertyValue z:Id="i66">
+                                <PropertyName>Range</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>char_columnForPainting + position.Split(":")[0]</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                              <PropertyValue z:Id="i67">
+                                <PropertyName>CellProperties</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>MaxStyle</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                              <PropertyValue z:Id="i68">
+                                <PropertyName>NameList</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>dict_config["UpdateSourceTable"].ToString()</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                              <PropertyValue z:Id="i69">
+                                <PropertyName>ExcelVariable</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>excel</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                            </PropertyValues>
+                            <SelectedOptionId i:nil="true" />
+                            <EnableStatus>true</EnableStatus>
+                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                            <RetryCount>-1</RetryCount>
+                            <Text>Установить стиль для для максимального значения</Text>
+                            <_activityFullName>Activities.Office.InteropExcel.SetFormat</_activityFullName>
+                          </AbstractStep>
+                        </Childs>
+                        <Id>8680d809-0c9b-45e3-8b71-3212729e3eb1</Id>
+                        <Parent z:Ref="i63" />
+                        <PropertyValues />
+                        <SelectedOptionId i:nil="true" />
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text></Text>
+                        <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
+                      </AbstractStep>
+                      <AbstractStep z:Id="i70" i:type="ExecutedStep">
+                        <Childs />
+                        <Id>d0643aa7-a40a-4012-9596-b9cce91b0e89</Id>
+                        <Parent z:Ref="i63" />
+                        <PropertyValues />
+                        <SelectedOptionId i:nil="true" />
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text></Text>
+                        <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
+                      </AbstractStep>
+                    </Childs>
+                    <Id>d1f36591-1f5b-4885-b000-bbc9b9dfb851</Id>
+                    <Parent z:Ref="i56" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i71">
+                        <PropertyName>Condition</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>position.Split(":")[0] != "null"</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text></Text>
+                    <_activityFullName>BR.Core.Base.If</_activityFullName>
+                  </AbstractStep>
+                  <AbstractStep z:Id="i72" i:type="ExecutedStep">
+                    <Childs>
+                      <AbstractStep z:Id="i73" i:type="ExecutedStep">
+                        <Childs>
+                          <AbstractStep z:Id="i74" i:type="ExecutedStep">
+                            <Childs />
+                            <Id>40a4647d-6bf6-438b-bac9-4f3d5fc9f3ba</Id>
+                            <Parent z:Ref="i73" />
+                            <PropertyValues>
+                              <PropertyValue z:Id="i75">
+                                <PropertyName>Range</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>char_columnForPainting + position.Split(":")[1]</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                              <PropertyValue z:Id="i76">
+                                <PropertyName>CellProperties</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>MinStyle</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                              <PropertyValue z:Id="i77">
+                                <PropertyName>NameList</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>dict_config["UpdateSourceTable"].ToString()</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                              <PropertyValue z:Id="i78">
+                                <PropertyName>ExcelVariable</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>excel</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                            </PropertyValues>
+                            <SelectedOptionId i:nil="true" />
+                            <EnableStatus>true</EnableStatus>
+                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                            <RetryCount>-1</RetryCount>
+                            <Text>Установить стиль для для минимального значения</Text>
+                            <_activityFullName>Activities.Office.InteropExcel.SetFormat</_activityFullName>
+                          </AbstractStep>
+                        </Childs>
+                        <Id>6e9934bc-fb76-4136-bba2-95611132e616</Id>
+                        <Parent z:Ref="i72" />
+                        <PropertyValues />
+                        <SelectedOptionId i:nil="true" />
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text></Text>
+                        <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
+                      </AbstractStep>
+                      <AbstractStep z:Id="i79" i:type="ExecutedStep">
+                        <Childs />
+                        <Id>169d60d5-13ab-4ef3-8272-2196303c4a1c</Id>
+                        <Parent z:Ref="i72" />
+                        <PropertyValues />
+                        <SelectedOptionId i:nil="true" />
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text></Text>
+                        <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
+                      </AbstractStep>
+                    </Childs>
+                    <Id>2a406f02-2e1f-4ebc-80af-97509ec5b8ff</Id>
+                    <Parent z:Ref="i56" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i80">
+                        <PropertyName>Condition</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>position.Split(":")[1] != "null"</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text></Text>
+                    <_activityFullName>BR.Core.Base.If</_activityFullName>
+                  </AbstractStep>
+                </Childs>
+                <Id>d595b229-0865-4e90-a194-a4f6414ce193</Id>
+                <Parent z:Ref="i52" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i81">
+                    <PropertyName>Collection</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>list_position</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i82">
+                    <PropertyName>Iterator</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>position</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i83">
+                    <PropertyName>Counter</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression></_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>BR.Core.Base.LoopForEach</_activityFullName>
+              </AbstractStep>
+            </Childs>
+            <Id>f005df64-0443-4d26-8726-4b4ef53f72ba</Id>
+            <Parent z:Ref="i28" />
+            <PropertyValues>
+              <PropertyValue z:Id="i84">
+                <PropertyName>Collection</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>list_positionForPaiting</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i85">
+                <PropertyName>Iterator</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>positions</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i86">
+                <PropertyName>Counter</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression></_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+            </PropertyValues>
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text></Text>
+            <_activityFullName>BR.Core.Base.LoopForEach</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i87" i:type="ExecutedStep">
+            <Childs />
+            <Id>29456d29-1174-45a7-af46-f08a8dc6f568</Id>
+            <Parent z:Ref="i28" />
+            <PropertyValues>
+              <PropertyValue z:Id="i88">
+                <PropertyName>ExcelVariable</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>excel</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+            </PropertyValues>
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text></Text>
+            <_activityFullName>Activities.Office.InteropExcel.ClosedConnectionExcel</_activityFullName>
+          </AbstractStep>
+        </Childs>
+        <Id>75557346-dcd9-43ac-8a5a-6bb23e7c5d65</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues />
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Task-1</Text>
+        <_activityFullName>BR.Core.Base.Container</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i89" i:type="ExecutedStep">
+        <Childs>
+          <AbstractStep z:Id="i90" i:type="ExecutedStep">
+            <Childs />
+            <Id>00cfffae-b2a1-4e08-82f4-a03d1627ec0e</Id>
+            <Parent z:Ref="i89" />
+            <PropertyValues>
+              <PropertyValue z:Id="i91">
+                <PropertyName>Range</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>""</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i92">
+                <PropertyName>Result</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>dt_updateSourceTable</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i93">
+                <PropertyName>SheetName</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>dict_config["UpdateSourceTable"].ToString()</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i94">
+                <PropertyName>FileName</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>Path.Combine(dict_paths["TEMPFolder"], str_excelFile)</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+            </PropertyValues>
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text>Читаем данные из обновленной таблицы</Text>
+            <_activityFullName>Activities.Office.Excel.ReadRange</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i95" i:type="ExecutedStep">
+            <Childs>
+              <AbstractStep z:Id="i96" i:type="ExecutedStep">
+                <Childs />
+                <Id>0f9ff04a-e7c2-48d8-9b02-87d966d28c38</Id>
+                <Parent z:Ref="i95" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i97">
+                    <PropertyName>Value</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>new List&lt;string&gt;()</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i98">
+                    <PropertyName>To</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>list_maxAndMin</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text>Создание списка максимума и минимума для специализаций</Text>
+                <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+              </AbstractStep>
+              <AbstractStep z:Id="i99" i:type="ExecutedStep">
+                <Childs />
+                <Id>77a81ef3-7ff8-43ea-8b0a-2c5e83d20856</Id>
+                <Parent z:Ref="i95" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i100">
+                    <PropertyName>CSCode</PropertyName>
+                    <_dataType>Value</_dataType>
+                    <_expression i:nil="true" />
+                    <_screenShotBase64 i:nil="true" />
+                    <_value xmlns:d11p1="http://www.w3.org/2001/XMLSchema" i:type="d11p1:string">var softwareEngineering = dt_updateSourceTable.AsEnumerable()
+        .Where(row =&gt; System.Text.RegularExpressions
+            .Regex.Match($"{row["Факультет"]}", @"(?&lt;=\d+.\d+.\d+\s).+").Value == "Программная инженерия")
+        .ToList();
+        
+var computerSecurity = dt_updateSourceTable.AsEnumerable()
+        .Where(row =&gt; System.Text.RegularExpressions
+            .Regex.Match($"{row["Факультет"]}", @"(?&lt;=\d+.\d+.\d+\s).+").Value == "Компьютерная безопасность")
+        .ToList();
+        
+int int_maxSoftwareEngineering = softwareEngineering.Max(row =&gt; int.Parse($"{row["Сумма баллов (бюджет)"]}"));
+int int_minSoftwareEngineering = softwareEngineering.Min(row =&gt; int.Parse($"{row["Сумма баллов (бюджет)"]}"));
+
+int int_maxComputerSecurity = computerSecurity.Max(row =&gt; int.Parse($"{row["Сумма баллов (бюджет)"]}"));
+int int_minComputerSecurity = computerSecurity.Min(row =&gt; int.Parse($"{row["Сумма баллов (бюджет)"]}"));
+
+list_maxAndMin = new List&lt;string&gt;() { 
+    int_maxSoftwareEngineering + ":" + int_minSoftwareEngineering + ":Программная инженерия",
+    int_maxComputerSecurity + ":" + int_minComputerSecurity + ":Компьютерная безопасность"
+};</_value>
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>BR.Core.Base.ExecuteCSCode</_activityFullName>
+              </AbstractStep>
+              <AbstractStep z:Id="i101" i:type="ExecutedStep">
+                <Childs>
+                  <AbstractStep z:Id="i102" i:type="ExecutedStep">
+                    <Childs />
+                    <Id>10b5e1d1-4d14-45aa-9c40-505ebd0a8ee1</Id>
+                    <Parent z:Ref="i101" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i103">
+                        <PropertyName>DemandValue</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>$"Факультет \"{maxAndMin.Split(":")[2]}\""</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i104">
+                        <PropertyName>Result</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>str_position</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i105">
+                        <PropertyName>SheetName</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>dict_config["ResultTable"].ToString()</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i106">
+                        <PropertyName>FileName</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>Path.Combine(dict_paths["TEMPFolder"], str_excelFile)</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text>Находим позицию начала таблицы для заполнения</Text>
+                    <_activityFullName>Activities.Office.Excel.FindCellsByString</_activityFullName>
+                  </AbstractStep>
+                  <AbstractStep z:Id="i107" i:type="ExecutedStep">
+                    <Childs />
+                    <Id>dffb4032-1ee9-4ee5-8bae-83d29626ddd5</Id>
+                    <Parent z:Ref="i101" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i108">
+                        <PropertyName>Value</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>""</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i109">
+                        <PropertyName>To</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>str_maxPosition</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text>Создание переменной позиции для максимального значения</Text>
+                    <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+                  </AbstractStep>
+                  <AbstractStep z:Id="i110" i:type="ExecutedStep">
+                    <Childs />
+                    <Id>5b9b79a3-095f-459a-9378-d0b4f53fca61</Id>
+                    <Parent z:Ref="i101" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i111">
+                        <PropertyName>Value</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>""</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i112">
+                        <PropertyName>To</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>str_minPosition</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text>Создание переменной позиции для минимального значения</Text>
+                    <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+                  </AbstractStep>
+                  <AbstractStep z:Id="i113" i:type="ExecutedStep">
+                    <Childs />
+                    <Id>b243bf25-ad34-4f1c-bc16-85ec435e7185</Id>
+                    <Parent z:Ref="i101" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i114">
+                        <PropertyName>CSCode</PropertyName>
+                        <_dataType>Value</_dataType>
+                        <_expression i:nil="true" />
+                        <_screenShotBase64 i:nil="true" />
+                        <_value xmlns:d13p1="http://www.w3.org/2001/XMLSchema" i:type="d13p1:string">char char_max = System.Text.RegularExpressions.Regex.Match(str_position.First(), @"\D").Value.First();
+var int_max = System.Text.RegularExpressions.Regex.Match(str_position.First(), @"\d+").Value;
+
+str_maxPosition = ((char)((int)char_max + 1)).ToString() + (int.Parse(int_max) + 1);
+str_minPosition = ((char)((int)char_max + 1)).ToString() + (int.Parse(int_max) + 2);</_value>
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text></Text>
+                    <_activityFullName>BR.Core.Base.ExecuteCSCode</_activityFullName>
+                  </AbstractStep>
+                  <AbstractStep z:Id="i115" i:type="ExecutedStep">
+                    <Childs />
+                    <Id>0f8844ec-7727-4bcb-8bfd-e10016a3e6c9</Id>
+                    <Parent z:Ref="i101" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i116">
+                        <PropertyName>Address</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>str_maxPosition</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i117">
+                        <PropertyName>Value</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>maxAndMin.Split(":")[0]</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i118">
+                        <PropertyName>SheetName</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>dict_config["ResultTable"].ToString()</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i119">
+                        <PropertyName>FileName</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>Path.Combine(dict_paths["TEMPFolder"], str_excelFile)</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId>0</SelectedOptionId>
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text>Записать значение для максимума</Text>
+                    <_activityFullName>Activities.Office.Excel.WriteCell</_activityFullName>
+                  </AbstractStep>
+                  <AbstractStep z:Id="i120" i:type="ExecutedStep">
+                    <Childs />
+                    <Id>29a27295-8aff-4f0f-8d77-9896c4225976</Id>
+                    <Parent z:Ref="i101" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i121">
+                        <PropertyName>Address</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>str_minPosition</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i122">
+                        <PropertyName>Value</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>maxAndMin.Split(":")[1]</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i123">
+                        <PropertyName>SheetName</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>dict_config["ResultTable"].ToString()</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i124">
+                        <PropertyName>FileName</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>Path.Combine(dict_paths["TEMPFolder"], str_excelFile)</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId>0</SelectedOptionId>
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text>Записать значение для минимума</Text>
+                    <_activityFullName>Activities.Office.Excel.WriteCell</_activityFullName>
+                  </AbstractStep>
+                </Childs>
+                <Id>cbf7048b-6058-41b9-aa2d-790f899d4681</Id>
+                <Parent z:Ref="i95" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i125">
+                    <PropertyName>Collection</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>list_maxAndMin</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i126">
+                    <PropertyName>Iterator</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>maxAndMin</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i127">
+                    <PropertyName>Counter</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression></_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>BR.Core.Base.LoopForEach</_activityFullName>
+              </AbstractStep>
+            </Childs>
+            <Id>aa3fefc2-6153-40de-ac6b-63583c6e6bf2</Id>
+            <Parent z:Ref="i89" />
+            <PropertyValues />
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text>2.1</Text>
+            <_activityFullName>BR.Core.Base.Container</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i128" i:type="ExecutedStep">
+            <Childs>
+              <AbstractStep z:Id="i129" i:type="ExecutedStep">
+                <Childs />
+                <Id>494b28ac-a789-4967-bae9-8170e244c9e7</Id>
+                <Parent z:Ref="i128" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i130">
+                    <PropertyName>Value</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>new List&lt;string&gt; { "бюджет", "платно" }</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i131">
+                    <PropertyName>To</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>list_trainingOptions</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text>Создание списка для возможных таблиц</Text>
+                <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+              </AbstractStep>
+              <AbstractStep z:Id="i132" i:type="ExecutedStep">
+                <Childs>
+                  <AbstractStep z:Id="i133" i:type="ExecutedStep">
+                    <Childs />
+                    <Id>c4f54167-3d34-4077-baf1-1c74cce089b3</Id>
+                    <Parent z:Ref="i132" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i134">
+                        <PropertyName>Value</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>new List&lt;DataRow&gt;()</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i135">
+                        <PropertyName>To</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>dr_maxSumPoint</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text>Создание списка максимальных значений</Text>
+                    <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+                  </AbstractStep>
+                  <AbstractStep z:Id="i136" i:type="ExecutedStep">
+                    <Childs />
+                    <Id>5f44247a-020c-42da-8d36-8c8805b10480</Id>
+                    <Parent z:Ref="i132" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i137">
+                        <PropertyName>Value</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>new List&lt;DataRow&gt;()</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i138">
+                        <PropertyName>To</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>dr_minSumPoint</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text>Создание списка минимальных значений</Text>
+                    <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+                  </AbstractStep>
+                  <AbstractStep z:Id="i139" i:type="ExecutedStep">
+                    <Childs />
+                    <Id>435c349d-bf3e-4dc2-9472-77f509632725</Id>
+                    <Parent z:Ref="i132" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i140">
+                        <PropertyName>Value</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>dt_updateSourceTable.AsEnumerable()
+.Where(row =&gt; $"{row[$"Сумма баллов ({option})"]}" != "")
+.Max(row =&gt; int.Parse($"{row[$"Сумма баллов ({option})"]}"))</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i141">
+                        <PropertyName>To</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>int_maxSumPoint</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text>Присвоение максимальных сумм баллов</Text>
+                    <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+                  </AbstractStep>
+                  <AbstractStep z:Id="i142" i:type="ExecutedStep">
+                    <Childs />
+                    <Id>407e96d6-c72a-4f70-ad3e-466983c39e4f</Id>
+                    <Parent z:Ref="i132" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i143">
+                        <PropertyName>Value</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>dt_updateSourceTable.AsEnumerable()
+.Where(row =&gt; $"{row[$"Сумма баллов ({option})"]}" != "")
+.Min(row =&gt; int.Parse($"{row[$"Сумма баллов ({option})"]}"))</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i144">
+                        <PropertyName>To</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>int_minSumPoint</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text>Присвоение минимальных сумм баллов</Text>
+                    <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+                  </AbstractStep>
+                  <AbstractStep z:Id="i145" i:type="ExecutedStep">
+                    <Childs />
+                    <Id>176da1ee-7eca-4365-becc-291042474937</Id>
+                    <Parent z:Ref="i132" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i146">
+                        <PropertyName>CSCode</PropertyName>
+                        <_dataType>Value</_dataType>
+                        <_expression i:nil="true" />
+                        <_screenShotBase64 i:nil="true" />
+                        <_value xmlns:d13p1="http://www.w3.org/2001/XMLSchema" i:type="d13p1:string">dr_maxSumPoint = dt_updateSourceTable.AsEnumerable()
+.Where(row =&gt; $"{row[$"Сумма баллов ({option})"]}" != "")
+.Where(row =&gt; int.Parse($"{row[$"Сумма баллов ({option})"]}") == int_maxSumPoint)
+.OrderBy(row =&gt; System.Text.RegularExpressions.Regex.Match($"{row["Факультет"]}", 
+    @"(?&lt;=\))[\w -]+|(?&lt;=\d+.\d+.\d+\s)[\w -]+(?=\()|(?&lt;=^\d+.\d+.\d+\s)[\w -]+").Value).ToList();
+
+dr_minSumPoint = dt_updateSourceTable.AsEnumerable()
+.Where(row =&gt; $"{row[$"Сумма баллов ({option})"]}" != "")
+.Where(row =&gt; int.Parse($"{row[$"Сумма баллов ({option})"]}") == int_minSumPoint)
+.OrderBy(row =&gt; System.Text.RegularExpressions.Regex.Match($"{row["Факультет"]}", 
+    @"(?&lt;=\))[\w -]+|(?&lt;=\d+.\d+.\d+\s)[\w -]+(?=\()|(?&lt;=^\d+.\d+.\d+\s)[\w -]+").Value).ToList();</_value>
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text></Text>
+                    <_activityFullName>BR.Core.Base.ExecuteCSCode</_activityFullName>
+                  </AbstractStep>
+                  <AbstractStep z:Id="i147" i:type="ExecutedStep">
+                    <Childs />
+                    <Id>76773e86-4f63-44f5-acfe-27e71ed4d8c7</Id>
+                    <Parent z:Ref="i132" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i148">
+                        <PropertyName>DemandValue</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>$"{char.ToUpper(option[0]) + option.Substring(1)}"</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i149">
+                        <PropertyName>Result</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>list_positions</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i150">
+                        <PropertyName>SheetName</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>dict_config["ResultTable"].ToString()</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i151">
+                        <PropertyName>FileName</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>Path.Combine(dict_paths["TEMPFolder"], str_excelFile)</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text>Найти начало таблицы для заполнения</Text>
+                    <_activityFullName>Activities.Office.Excel.FindCellsByString</_activityFullName>
+                  </AbstractStep>
+                  <AbstractStep z:Id="i152" i:type="ExecutedStep">
+                    <Childs>
+                      <AbstractStep z:Id="i153" i:type="ExecutedStep">
+                        <Childs />
+                        <Id>e6f77338-11ef-4bad-991a-a6e985832183</Id>
+                        <Parent z:Ref="i152" />
+                        <PropertyValues>
+                          <PropertyValue z:Id="i154">
+                            <PropertyName>Value</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>""</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                          <PropertyValue z:Id="i155">
+                            <PropertyName>To</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>str_position</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                        </PropertyValues>
+                        <SelectedOptionId i:nil="true" />
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text>Создание переменной позиции для заполнения</Text>
+                        <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+                      </AbstractStep>
+                      <AbstractStep z:Id="i156" i:type="ExecutedStep">
+                        <Childs />
+                        <Id>172e5e1d-6aae-482b-8d3a-0118b98dcfb1</Id>
+                        <Parent z:Ref="i152" />
+                        <PropertyValues>
+                          <PropertyValue z:Id="i157">
+                            <PropertyName>CSCode</PropertyName>
+                            <_dataType>Value</_dataType>
+                            <_expression i:nil="true" />
+                            <_screenShotBase64 i:nil="true" />
+                            <_value xmlns:d15p1="http://www.w3.org/2001/XMLSchema" i:type="d15p1:string">char char_max = System.Text.RegularExpressions.Regex.Match(list_positions.First(), @"\D").Value.First();
+var int_max = System.Text.RegularExpressions.Regex.Match(list_positions.First(), @"\d+").Value;
+
+str_position = char_max.ToString() + (int.Parse(int_max) + 1 + i);</_value>
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                        </PropertyValues>
+                        <SelectedOptionId i:nil="true" />
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text></Text>
+                        <_activityFullName>BR.Core.Base.ExecuteCSCode</_activityFullName>
+                      </AbstractStep>
+                      <AbstractStep z:Id="i158" i:type="ExecutedStep">
+                        <Childs />
+                        <Id>242daffa-557e-4991-8a4d-5a8b7cd26a35</Id>
+                        <Parent z:Ref="i152" />
+                        <PropertyValues>
+                          <PropertyValue z:Id="i159">
+                            <PropertyName>Address</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>str_position</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                          <PropertyValue z:Id="i160">
+                            <PropertyName>Value</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>$"{row["Факультет"]}"</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                          <PropertyValue z:Id="i161">
+                            <PropertyName>SheetName</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>dict_config["ResultTable"].ToString()</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                          <PropertyValue z:Id="i162">
+                            <PropertyName>FileName</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>Path.Combine(dict_paths["TEMPFolder"], str_excelFile)</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                        </PropertyValues>
+                        <SelectedOptionId>0</SelectedOptionId>
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text>Записать значение в таблицу для максимума</Text>
+                        <_activityFullName>Activities.Office.Excel.WriteCell</_activityFullName>
+                      </AbstractStep>
+                    </Childs>
+                    <Id>373f49a9-3e47-4814-84df-bdf074dce371</Id>
+                    <Parent z:Ref="i132" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i163">
+                        <PropertyName>Collection</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>dr_maxSumPoint</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i164">
+                        <PropertyName>Iterator</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>row</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i165">
+                        <PropertyName>Counter</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>i</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text></Text>
+                    <_activityFullName>BR.Core.Base.LoopForEach</_activityFullName>
+                  </AbstractStep>
+                  <AbstractStep z:Id="i166" i:type="ExecutedStep">
+                    <Childs>
+                      <AbstractStep z:Id="i167" i:type="ExecutedStep">
+                        <Childs />
+                        <Id>158762ab-3ff6-43be-9f91-ae92f178bc04</Id>
+                        <Parent z:Ref="i166" />
+                        <PropertyValues>
+                          <PropertyValue z:Id="i168">
+                            <PropertyName>Value</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>""</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                          <PropertyValue z:Id="i169">
+                            <PropertyName>To</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>str_position</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                        </PropertyValues>
+                        <SelectedOptionId i:nil="true" />
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text>Создание переменной позиции для заполнения</Text>
+                        <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+                      </AbstractStep>
+                      <AbstractStep z:Id="i170" i:type="ExecutedStep">
+                        <Childs />
+                        <Id>0d6bc5fc-f168-4f2b-a427-392ce1c0e847</Id>
+                        <Parent z:Ref="i166" />
+                        <PropertyValues>
+                          <PropertyValue z:Id="i171">
+                            <PropertyName>CSCode</PropertyName>
+                            <_dataType>Value</_dataType>
+                            <_expression i:nil="true" />
+                            <_screenShotBase64 i:nil="true" />
+                            <_value xmlns:d15p1="http://www.w3.org/2001/XMLSchema" i:type="d15p1:string">char char_max = System.Text.RegularExpressions.Regex.Match(list_positions.First(), @"\D").Value.First();
+var int_max = System.Text.RegularExpressions.Regex.Match(list_positions.First(), @"\d+").Value;
+
+str_position = ((char)((int)char_max + 3)).ToString() + (int.Parse(int_max) + 1 + i);</_value>
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                        </PropertyValues>
+                        <SelectedOptionId i:nil="true" />
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text></Text>
+                        <_activityFullName>BR.Core.Base.ExecuteCSCode</_activityFullName>
+                      </AbstractStep>
+                      <AbstractStep z:Id="i172" i:type="ExecutedStep">
+                        <Childs />
+                        <Id>278d5c79-4d8a-4ac0-80aa-e961b47fb140</Id>
+                        <Parent z:Ref="i166" />
+                        <PropertyValues>
+                          <PropertyValue z:Id="i173">
+                            <PropertyName>Address</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>str_position</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                          <PropertyValue z:Id="i174">
+                            <PropertyName>Value</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>$"{row["Факультет"]}"</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                          <PropertyValue z:Id="i175">
+                            <PropertyName>SheetName</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>dict_config["ResultTable"].ToString()</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                          <PropertyValue z:Id="i176">
+                            <PropertyName>FileName</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>Path.Combine(dict_paths["TEMPFolder"], str_excelFile)</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                        </PropertyValues>
+                        <SelectedOptionId>0</SelectedOptionId>
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text>Записать значение в таблицу для минимума</Text>
+                        <_activityFullName>Activities.Office.Excel.WriteCell</_activityFullName>
+                      </AbstractStep>
+                    </Childs>
+                    <Id>c8842371-2aad-4784-ae84-67b12faaa926</Id>
+                    <Parent z:Ref="i132" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i177">
+                        <PropertyName>Collection</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>dr_minSumPoint</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i178">
+                        <PropertyName>Iterator</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>row</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i179">
+                        <PropertyName>Counter</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>i</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text></Text>
+                    <_activityFullName>BR.Core.Base.LoopForEach</_activityFullName>
+                  </AbstractStep>
+                </Childs>
+                <Id>901f5c78-bbb9-435d-8f1b-369963cc9489</Id>
+                <Parent z:Ref="i128" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i180">
+                    <PropertyName>Collection</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>list_trainingOptions</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i181">
+                    <PropertyName>Iterator</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>option</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i182">
+                    <PropertyName>Counter</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression></_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>BR.Core.Base.LoopForEach</_activityFullName>
+              </AbstractStep>
+            </Childs>
+            <Id>cb48cda5-8303-4017-892b-47f9a520d787</Id>
+            <Parent z:Ref="i89" />
+            <PropertyValues />
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text>2.2</Text>
+            <_activityFullName>BR.Core.Base.Container</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i183" i:type="ExecutedStep">
+            <Childs>
+              <AbstractStep z:Id="i184" i:type="ExecutedStep">
+                <Childs />
+                <Id>56ec1f53-3e9e-4e1e-b41e-c8a9ef8365c3</Id>
+                <Parent z:Ref="i183" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i185">
+                    <PropertyName>Value</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>dt_updateSourceTable.AsEnumerable()
+    .Where(row =&gt; System.Text.RegularExpressions.Regex
+        .IsMatch($"{row["Факультет"]}", @"^09|^38"))
+    .CopyToDataTable()</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i186">
+                    <PropertyName>To</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>list_faculties</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text>Получение списка факультетов удовлетворяющих условию </Text>
+                <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+              </AbstractStep>
+              <AbstractStep z:Id="i187" i:type="ExecutedStep">
+                <Childs />
+                <Id>dda08fd5-bc3e-4a08-b875-2cad6261859d</Id>
+                <Parent z:Ref="i183" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i188">
+                    <PropertyName>Value</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>list_faculties.AsEnumerable()
+    .Select(row =&gt; {
+        string name = System.Text.RegularExpressions.Regex.Match($"{row["Факультет"]}", 
+            @"(?&lt;=\))[\w -]+|(?&lt;=\d+.\d+.\d+\s)[\w -]+(?=\()|(?&lt;=^\d+.\d+.\d+\s)[\w -]+").Value.Trim();
+        
+        return name;
+    }).Distinct().OrderDescending().ToList()</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i189">
+                    <PropertyName>To</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>list_namesFaculties</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text>Получение название факультетов</Text>
+                <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+              </AbstractStep>
+              <AbstractStep z:Id="i190" i:type="ExecutedStep">
+                <Childs />
+                <Id>146bc3ea-5bf4-41b7-8929-01be5cc3223c</Id>
+                <Parent z:Ref="i183" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i191">
+                    <PropertyName>DemandValue</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>$"Факультеты:"</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i192">
+                    <PropertyName>Result</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>list_positions</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i193">
+                    <PropertyName>SheetName</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>dict_config["ResultTable"].ToString()</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i194">
+                    <PropertyName>FileName</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>Path.Combine(dict_paths["TEMPFolder"], str_excelFile)</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text>Найти начало таблицы </Text>
+                <_activityFullName>Activities.Office.Excel.FindCellsByString</_activityFullName>
+              </AbstractStep>
+              <AbstractStep z:Id="i195" i:type="ExecutedStep">
+                <Childs>
+                  <AbstractStep z:Id="i196" i:type="ExecutedStep">
+                    <Childs />
+                    <Id>477b0b55-90dc-469c-a1e1-5f8265fddbad</Id>
+                    <Parent z:Ref="i195" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i197">
+                        <PropertyName>Value</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>""</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i198">
+                        <PropertyName>To</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>str_position</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text>Создание переменной позиции для заполнения</Text>
+                    <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+                  </AbstractStep>
+                  <AbstractStep z:Id="i199" i:type="ExecutedStep">
+                    <Childs />
+                    <Id>8daf3cf9-fa06-415d-a4ec-7afdc6fe4afe</Id>
+                    <Parent z:Ref="i195" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i200">
+                        <PropertyName>CSCode</PropertyName>
+                        <_dataType>Value</_dataType>
+                        <_expression i:nil="true" />
+                        <_screenShotBase64 i:nil="true" />
+                        <_value xmlns:d13p1="http://www.w3.org/2001/XMLSchema" i:type="d13p1:string">string word = System.Text.RegularExpressions.Regex.Match(list_positions.First(), @"\D").Value;
+int int_max = int.Parse(System.Text.RegularExpressions.Regex.Match(list_positions.First(), @"\d+").Value);
+
+str_position = word + (int_max + list_namesFaculties.IndexOf(faculty) + 1);</_value>
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text></Text>
+                    <_activityFullName>BR.Core.Base.ExecuteCSCode</_activityFullName>
+                  </AbstractStep>
+                  <AbstractStep z:Id="i201" i:type="ExecutedStep">
+                    <Childs />
+                    <Id>0324ee13-856c-4792-b9d1-9f8c3fc299a3</Id>
+                    <Parent z:Ref="i195" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i202">
+                        <PropertyName>Address</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>str_position</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i203">
+                        <PropertyName>Value</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>faculty</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i204">
+                        <PropertyName>SheetName</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>dict_config["ResultTable"].ToString()</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i205">
+                        <PropertyName>FileName</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>Path.Combine(dict_paths["TEMPFolder"], str_excelFile)</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId>0</SelectedOptionId>
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text>Записать названия факультетов в таблицу</Text>
+                    <_activityFullName>Activities.Office.Excel.WriteCell</_activityFullName>
+                  </AbstractStep>
+                </Childs>
+                <Id>55a21d3e-98b8-48bd-a23b-83928f320df4</Id>
+                <Parent z:Ref="i183" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i206">
+                    <PropertyName>Collection</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>list_namesFaculties</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i207">
+                    <PropertyName>Iterator</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>faculty</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i208">
+                    <PropertyName>Counter</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression></_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>BR.Core.Base.LoopForEach</_activityFullName>
+              </AbstractStep>
+            </Childs>
+            <Id>eddaa328-3a9a-49eb-95b2-b06b13e14e26</Id>
+            <Parent z:Ref="i89" />
+            <PropertyValues />
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text>2.3</Text>
+            <_activityFullName>BR.Core.Base.Container</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i209" i:type="ExecutedStep">
+            <Childs>
+              <AbstractStep z:Id="i210" i:type="ExecutedStep">
+                <Childs />
+                <Id>2cfc521e-6a53-409d-87d9-ee3822a62c15</Id>
+                <Parent z:Ref="i209" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i211">
+                    <PropertyName>Range</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>""</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i212">
+                    <PropertyName>Result</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>dt_universityAndSites</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i213">
+                    <PropertyName>SheetName</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>dict_config["UniversityAndSites"].ToString()</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i214">
+                    <PropertyName>FileName</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>Path.Combine(dict_paths["TEMPFolder"], str_excelFile)</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text>Получение таблицы из листа Университеты + сайты</Text>
+                <_activityFullName>Activities.Office.Excel.ReadRange</_activityFullName>
+              </AbstractStep>
+              <AbstractStep z:Id="i215" i:type="ExecutedStep">
+                <Childs />
+                <Id>82ac277f-df02-4127-968e-290c0115400f</Id>
+                <Parent z:Ref="i209" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i216">
+                    <PropertyName>CSCode</PropertyName>
+                    <_dataType>Value</_dataType>
+                    <_expression i:nil="true" />
+                    <_screenShotBase64 i:nil="true" />
+                    <_value xmlns:d11p1="http://www.w3.org/2001/XMLSchema" i:type="d11p1:string">dt_universityAndSites.Columns
+    .Add("Количество бюджетных мест (max)", typeof(string));
+    
+string university = "";
+    
+dict_university = dt_sourceTable.AsEnumerable().Select(row =&gt; {
+    if($"{row["ВУЗ"]}" != "")
+        university = $"{row["ВУЗ"]}";
+        
+    row["ВУЗ"] = university;
+    
+    return row;
+})
+    .Where(row =&gt; row.ItemArray.All(item =&gt; $"{item}" != ""))
+    .GroupBy(row =&gt; $"{row["ВУЗ"]}")
+    .ToDictionary(group =&gt; group.Key, group =&gt; group.OrderByDescending(row =&gt; System.Text.RegularExpressions.Regex
+        .Match($"{row["Факультет"]}", @"(?&lt;=\d+.\d+.\d+\s).+").Value).ToList());
+
+DataTable dt_result = new();
+foreach(DataColumn column in dt_universityAndSites.Columns)
+    dt_result.Columns.Add(column.ColumnName);
+
+dt_universityAndSites.AsEnumerable()
+    .Join(dict_university,
+        row =&gt; $"{row["ВУЗ"]}",
+        dict =&gt; dict.Key,
+        (row, dict) =&gt; new { uas = row, du = dict })
+    .Select(obj =&gt; { 
+        obj.du.Value.Select(dr =&gt; {
+        
+        var row = dt_result.NewRow();
+        
+        row["ВУЗ"] = obj.uas["ВУЗ"];
+        row["Ссылка на сайт"] = obj.uas["Ссылка на сайт"];
+        row["Количество бюджетных мест (max)"] = dr["Количество бюджетных мест"];
+        
+        dt_result.Rows.Add(row);
+        
+        return "";
+        }).ToList();  
+        
+        return "";
+    }).ToList();
+    
+dt_universityAndSites = dt_result.AsEnumerable()
+    .Where(row =&gt; int.Parse($"{row["Количество бюджетных мест (max)"]}") &gt; 140).CopyToDataTable();</_value>
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>BR.Core.Base.ExecuteCSCode</_activityFullName>
+              </AbstractStep>
+              <AbstractStep z:Id="i217" i:type="ExecutedStep">
+                <Childs />
+                <Id>80a8c8f8-3404-4a11-ac1b-d5aab4e37513</Id>
+                <Parent z:Ref="i209" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i218">
+                    <PropertyName>DemandValue</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>$"ВУЗ"</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i219">
+                    <PropertyName>Result</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>list_positions</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i220">
+                    <PropertyName>SheetName</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>dict_config["ResultTable"].ToString()</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i221">
+                    <PropertyName>FileName</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>Path.Combine(dict_paths["TEMPFolder"], str_excelFile)</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text>Найти начало таблицы</Text>
+                <_activityFullName>Activities.Office.Excel.FindCellsByString</_activityFullName>
+              </AbstractStep>
+              <AbstractStep z:Id="i222" i:type="ExecutedStep">
+                <Childs />
+                <Id>9c39eed8-a2be-4d2f-b0fe-a351785dd761</Id>
+                <Parent z:Ref="i209" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i223">
+                    <PropertyName>Value</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>""</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i224">
+                    <PropertyName>To</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>str_position</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text>Создание переменной позиции для заполнения</Text>
+                <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+              </AbstractStep>
+              <AbstractStep z:Id="i225" i:type="ExecutedStep">
+                <Childs />
+                <Id>627c3111-ff89-4167-a9f5-87fcca96ce91</Id>
+                <Parent z:Ref="i209" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i226">
+                    <PropertyName>CSCode</PropertyName>
+                    <_dataType>Value</_dataType>
+                    <_expression i:nil="true" />
+                    <_screenShotBase64 i:nil="true" />
+                    <_value xmlns:d11p1="http://www.w3.org/2001/XMLSchema" i:type="d11p1:string">string word = System.Text.RegularExpressions.Regex.Match(list_positions.First(), @"\D").Value;
+int int_max = int.Parse(System.Text.RegularExpressions.Regex.Match(list_positions.First(), @"\d+").Value);
+
+str_position = word + (int_max + 1);</_value>
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>BR.Core.Base.ExecuteCSCode</_activityFullName>
+              </AbstractStep>
+              <AbstractStep z:Id="i227" i:type="ExecutedStep">
+                <Childs />
+                <Id>d11056e8-1127-4fc3-b026-0e0b411e892a</Id>
+                <Parent z:Ref="i209" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i228">
+                    <PropertyName>StartingCell</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>str_position</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i229">
+                    <PropertyName>DataTable</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>dt_universityAndSites</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i230">
+                    <PropertyName>AddHeaders</PropertyName>
+                    <_dataType>Value</_dataType>
+                    <_expression i:nil="true" />
+                    <_screenShotBase64 i:nil="true" />
+                    <_value xmlns:d11p1="http://www.w3.org/2001/XMLSchema" i:type="d11p1:boolean">false</_value>
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i231">
+                    <PropertyName>SheetName</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>dict_config["ResultTable"].ToString()</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i232">
+                    <PropertyName>FileName</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>Path.Combine(dict_paths["TEMPFolder"], str_excelFile)</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text>Записать получившуюся таблицу</Text>
+                <_activityFullName>Activities.Office.Excel.WriteRange</_activityFullName>
+              </AbstractStep>
+            </Childs>
+            <Id>5479776a-60b6-4b8c-9043-174d0d0c0359</Id>
+            <Parent z:Ref="i89" />
+            <PropertyValues />
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text>2.4</Text>
+            <_activityFullName>BR.Core.Base.Container</_activityFullName>
+          </AbstractStep>
+        </Childs>
+        <Id>ee2bacd9-7e4d-4880-9b8d-9d74106d8e6a</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues />
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Task-2</Text>
+        <_activityFullName>BR.Core.Base.Container</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i233" i:type="ExecutedStep">
+        <Childs />
+        <Id>a3ad13d2-635c-4162-97c2-ba3058669fa4</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i234">
+            <PropertyName>PathFrom</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>Path.Combine(dict_paths["TEMPFolder"], str_excelFile)</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i235">
+            <PropertyName>PathTo</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>Path.Combine(dict_paths["ResultsFolder"], $"Result-{DateTime.Now.ToString("ddMMyy hhmmss")}.xlsx")</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Копировать получившийся файл в папку Results</Text>
+        <_activityFullName>Activities.Files.CopyFileCatalog</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i236" i:type="ExecutedStep">
+        <Childs />
+        <Id>bcfb7d59-19af-40eb-8518-6b3fcdf733ad</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i237">
+            <PropertyName>FilePath</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>Path.Combine(dict_paths["TEMPFolder"])</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Удалить папку TEMP</Text>
+        <_activityFullName>Activities.Files.DeleteFile</_activityFullName>
+      </AbstractStep>
+    </Childs>
+    <Id>a4fd98d2-0320-4508-9fce-3deabfd31d51</Id>
+    <Parent i:nil="true" />
+    <PropertyValues />
+    <SelectedOptionId i:nil="true" />
+    <EnableStatus>true</EnableStatus>
+    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+    <RetryCount>-1</RetryCount>
+    <Text></Text>
+    <_activityFullName>BR.Core.Base.Container</_activityFullName>
+  </Logic>
+  <Name>main.pix</Name>
+  <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <Params>
+    <Parameter z:Id="i238">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>dict_config</Name>
+      <RunnerType>None</RunnerType>
+      <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
+    </Parameter>
+    <Parameter z:Id="i239">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>dict_paths</Name>
+      <RunnerType>None</RunnerType>
+      <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
+    </Parameter>
+    <Parameter z:Id="i240">
+      <DefaultValueExpression>@"ВУЗЫ_ИНФО_ПО_ФАКУЛЬТЕТАМ.xlsx"</DefaultValueExpression>
+      <Description></Description>
+      <Name>str_excelFile</Name>
+      <RunnerType>None</RunnerType>
+      <TypeString>System.String</TypeString>
+    </Parameter>
+    <Parameter z:Id="i241">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>dict_university</Name>
+      <RunnerType>None</RunnerType>
+      <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Data.DataRow, System.Data.Common, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
+    </Parameter>
+    <Parameter z:Id="i242">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>dt_universities</Name>
+      <RunnerType>None</RunnerType>
+      <TypeString>System.Data.DataTable</TypeString>
+    </Parameter>
+  </Params>
+  <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
+  <Variables xmlns:d2p1="http://schemas.datacontract.org/2004/07/BR.Logic.Params" />
+  <Version i:nil="true" />
+</Script>
